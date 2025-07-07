@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Arial";
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   flex-direction: column;
+    
+}
+.todo{
+ min-height: 600px;
+ border-radius: 8px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+input{
+    width: 595px;
+    height: 38px;
+    font-size: large;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgb(201, 198, 198);
+    
+    
+}
+input:focus{
+    width: 595px;
+    height: 38px;
+    font-size: large;
+    padding: 8px;
+    border-radius: 8px;
+    border: 3px solid rgb(147, 198, 223);
+    outline: none;
+    
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.add{
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 18px;
+background-color: #0d99f0;
+cursor: pointer;
+}
+.del-all{
+    width: 130px;
+    font-size: 18px;
+    padding: 9px 0;
+    color: #0d99f0;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #0d99f0;
+    cursor: pointer;
+}
+.del{
+        border: 1px solid;
+    color: #0d99f0;
+    border-radius: 8px;
+    padding: 3px 10px;
+    font-size: 18px;
+background-color: white;
+cursor: pointer;
+}
+.todos{
+width: 520px;
+padding: 20px;
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+row-gap: 15px;
+min-height: 550px;
+}
+.card{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+  margin-bottom: 10px;
+}
+img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+h1{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+   font-size: 27px;
+}
+footer{
+width: 100%;
+padding: 20px;
+display: flex;
+justify-content: center;
+
+}
+@media (max-width: 440px) {
+    .container{
+        height: 100%;
+        padding-top: 20px;
+    }
+    .todo{
+        min-height: 0;
+ border-radius: 8px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+.todos{
+width: 340px;
+padding: 20px;
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+row-gap: 15px;
+
+}
+    .input-field{
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+}
+    input{
+    width: 200px;
+    height: 38px;
+    font-size: large;
+   padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgb(201, 198, 198);
+    
+    
+}
+input:focus{
+    width: 200px;
+    height: 38px;
+    font-size: large;
+    padding: 8px;
+    border-radius: 8px;
+    border: 3px solid rgb(147, 198, 223);
+    outline: none;
+    
+}
+.del-all{
+    width: 80px;
+    font-size: 15px;
+    padding: 9px 0;
+    color: #0d99f0;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #0d99f0;
+    cursor: pointer;
+}
+.card{
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+  margin-bottom: 10px;
+}
+}
